@@ -12,11 +12,9 @@ describe DockingStation do
   end
 
   it 'raises and error if docking station is full' do
-    bike1 = Bike.new
-    subject.dock(bike1)
-    bike2 = Bike.new
+    subject.dock(Bike.new)
 
-    expect{ subject.dock(bike2) }.to raise_error("Docking station full.")
+    expect{ subject.dock(Bike.new) }.to raise_error("Docking station full.")
   end
 end
 
