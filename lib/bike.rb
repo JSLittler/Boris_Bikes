@@ -3,7 +3,4 @@ class Bike
     true
   end
 
-  def dock(bike)
-
-  end
 end

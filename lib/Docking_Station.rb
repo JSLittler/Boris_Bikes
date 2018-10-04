@@ -6,8 +6,9 @@ class DockingStation
   end
 
   def dock(bike)
-    @bike_dock = []
-    @bike_dock.push(bike)
-    @bike_dock
+    @bike = bike
   end
+  
+  attr_reader :bike
+
 end
