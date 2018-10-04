@@ -1,8 +1,9 @@
 require 'Docking_Station'
 
 describe DockingStation do
-  it 'responds to release_bike' do
-    expect(subject).to respond_to :release_bike
+  it 'releases a bike' do
+    bike = subject.release_bike
+    expect(bike).to be_an_instance_of(Bike)
   end
   
   it 'releases working bikes' do
